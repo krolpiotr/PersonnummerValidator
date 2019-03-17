@@ -126,7 +126,7 @@ class PersonnummerValidator extends AbstractValidator
      * @return string
      */
     public static function setFormat($str, $longFormat = false) {
-        if (!self::valid($str)) {
+        if (!self::isValid($str)) {
             return '';
         }
         $parts = self::getParts($str);
